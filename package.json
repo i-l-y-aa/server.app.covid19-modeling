@@ -24,9 +24,14 @@
   "main": "index.js",
   "scripts": {
     "json:server": "json-server --watch CovidDataNSK.json --port 8080",
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "npm run build"
   },
   "author": "",
   "license": "ISC",
   "description": ""
+  
+
+  
 }
+
