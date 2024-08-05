@@ -327,6 +327,59 @@ app.get('/api/csvTub/omsk', (req, resp) => {
     })
 })
 
+app.get('/api/csvSocTub/novosibirsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/novosibirsk-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/altay', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/altay-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/omsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/omsk-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
 
 app.get('/api/res_valid', (req, resp) => {
   https
@@ -410,4 +463,4 @@ app.post('/api/forecasts_train', urlencodedParser, (req, res) => {
   )
 })
 
-app.listen(process.env.PORT || 4000)
+app.listen(process.env.PORT || 3000)
