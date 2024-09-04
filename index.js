@@ -1087,6 +1087,385 @@ app.get('/api/csvTub/tatarstan', (req, resp) => {
     })
 })
 
+app.get('/api/csvTub/udmurtia', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/udmurtia-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/chuvashia', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/chuvashia-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/perm', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/perm-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/kirov', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/kirov-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/nizhniynovgorod', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/nizhniynovgorod-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/orenburg', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/orenburg-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/penza', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/penza-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/samara', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/samara-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/saratov', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/saratov-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/ulyanovsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/ulyanovsk-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/kurgan', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/kurgan-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/sverdlov', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/sverdlov-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/tumen', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/tumen-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/chelyabinsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/chelyabinsk-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/respaltay', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/respaltay-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/resptyva', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/resptyva-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/resphakasia', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/resphakasia-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/krasnoyarsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/krasnoyarsk-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/irkutsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/irkutsk-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/kemerovo', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/kemerovo-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvTub/tomsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/tomsk-tub-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+
 
 
 
@@ -1892,6 +2271,384 @@ app.get('/api/csvSocTub/mordovia', (req, resp) => {
 app.get('/api/csvSocTub/tatarstan', (req, resp) => {
   https
     .get('https://covid19-modeling.ru/data/tatarstan-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/udmurtia', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/udmurtia-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/chuvashia', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/chuvashia-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/perm', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/perm-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/kirov', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/kirov-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/nizhniynovgorod', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/nizhniynovgorod-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/orenburg', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/orenburg-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/penza', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/penza-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/samara', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/samara-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/saratov', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/saratov-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/ulyanovsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/ulyanovsk-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/kurgan', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/kurgan-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/sverdlov', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/sverdlov-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/tumen', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/tumen-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/chelyabinsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/chelyabinsk-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/respaltay', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/respaltay-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/resptyva', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/resptyva-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/resphakasia', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/resphakasia-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/krasnoyarsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/krasnoyarsk-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/irkutsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/irkutsk-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/kemerovo', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/kemerovo-tub-soc-econ.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvSocTub/tomsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/tomsk-tub-soc-econ.csv', res => {
       let data = ''
       res.on('data', chunk => {
         data += chunk
