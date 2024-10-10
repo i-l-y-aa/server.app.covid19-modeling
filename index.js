@@ -216,22 +216,19 @@ app.get('/api/csvCovid', (req, res) => {
 
 app.set('view engine', 'ejs')
 
-app.get('/api/csvCovid/nd', (req, resp) => {
+app.get('/api/csvCovid/novosibirsk', (req, resp) => {
   https
-    .get(
-      ' https://covid19-modeling.ru/data/novosibirsk-region-data.csv',
-      res => {
-        let data = ''
-        res.on('data', chunk => {
-          data += chunk
-        })
-        res.on('end', async () => {
-          const parsedData = await neatCsv(data)
-          let data2 = JSON.stringify(parsedData)
-          resp.send(data2)
-        })
-      }
-    )
+    .get('https://covid19-modeling.ru/data/novosibirsk-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
     .on('error', e => {
       console.error(e)
     })
@@ -272,6 +269,1346 @@ app.get('/api/csvCovid/omsk', (req, resp) => {
       console.error(e)
     })
 })
+
+app.get('/api/csvCovid/belgorod', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/belgorod-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/bryansk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/bryansk-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/vladimir', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/vladimir-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/voronezh', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/voronezh-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/ivanovsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/ivanovsk-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/kaluga', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/kaluga-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/kostroma', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/kostroma-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/kursk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/kursk-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/lipeck', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/lipeck-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/moscow', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/moscow-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/orel', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/orel-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/ryazun', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/ryazun-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/smolensk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/smolensk-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/tambov', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/tambov-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/tver', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/tver-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/tula', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/tula-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/yaroslavl', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/yaroslavl-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/kareliya', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/kareliya-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/komi', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/komi-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/arhangelsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/arhangelsk-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/vologda', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/vologda-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/kaliningrad', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/kaliningrad-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/leningrad', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/leningrad-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/murmansk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/murmansk-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/novgorod', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/novgorod-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/pskov', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/pskov-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/adygea', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/adygea-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/kalmykia', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/kalmykia-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/krasnodar', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/krasnodar-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/volgograd', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/volgograd-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/rostov', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/rostov-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+
+app.get('/api/csvCovid/dagestan', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/dagestan-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+
+app.get('/api/csvCovid/ingushetia', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/ingushetia-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+
+app.get('/api/csvCovid/kabarbalkar', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/kabarbalkar-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+
+app.get('/api/csvCovid/karcherk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/karcherk-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/sevosetiaalania', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/sevosetiaalania-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/chechnya', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/chechnya-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/stavrapol', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/stavrapol-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/bashkortostan', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/bashkortostan-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/maryal', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/maryal-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/mordovia', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/mordovia-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/tatarstan', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/tatarstan-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/udmurtia', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/udmurtia-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/chuvashia', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/chuvashia-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/perm', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/perm-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/kirov', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/kirov-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/nizhniynovgorod', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/nizhniynovgorod-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/orenburg', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/orenburg-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/penza', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/penza-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/samara', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/samara-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/saratov', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/saratov-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/ulyanovsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/ulyanovsk-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/kurgan', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/kurgan-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/sverdlov', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/sverdlov-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/tumen', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/tumen-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/chelyabinsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/chelyabinsk-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/respaltay', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/respaltay-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/resptyva', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/resptyva-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/resphakasia', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/resphakasia-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/krasnoyarsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/krasnoyarsk-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/irkutsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/irkutsk-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/kemerovo', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/kemerovo-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/tomsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/tomsk-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/buryatia', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/buryatia-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/saha', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/saha-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/zabaikalsky', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/zabaikalsky-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/kamchatsky', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/kamchatsky-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/primorsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/primorsk-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/habarovsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/habarovsk-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/amursk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/amursk-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/magadan', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/magadan-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/sahalin', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/sahalin-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/evreiskaya', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/evreiskaya-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+app.get('/api/csvCovid/chukotsk', (req, resp) => {
+  https
+    .get('https://covid19-modeling.ru/data/chukotsk-region-data.csv', res => {
+      let data = ''
+      res.on('data', chunk => {
+        data += chunk
+      })
+      res.on('end', async () => {
+        const parsedData = await neatCsv(data)
+        let data2 = JSON.stringify(parsedData)
+        resp.send(data2)
+      })
+    })
+    .on('error', e => {
+      console.error(e)
+    })
+})
+
+
+
+
 
 app.get('/api/csvTub/novosibirsk', (req, resp) => {
   https
