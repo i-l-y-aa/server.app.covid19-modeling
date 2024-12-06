@@ -6,7 +6,7 @@ import pandas as pd
 import pickle as p
 import json
 
-url = "https://covid19-modeling.ru/data/COVID19_forecasts.p"
+url = "https://ai-biolab.ru/data/COVID19_forecasts.p"
 filename="COVID19_forecasts.p"
 
 r=requests.get(url, allow_redirects=True)

@@ -12,7 +12,7 @@ print("okey")
 import sys
 
 
-with open('../www/covid19-modeling.ru/SEIR_HCD/SOVID19_forecasts.p', "rb") as fh:
+with open('../www/ai-biolab.ru/SEIR_HCD/SOVID19_forecasts.p', "rb") as fh:
   df = p.load(fh)
 
 for key in df.keys():

@@ -44,15 +44,15 @@ state_url = None
 #print(reg_num)
 if reg_num == 1:
     location='Novosibirsk'
-    state_url = 'https://covid19-modeling.ru/data/novosibirsk-region-data.csv'
+    state_url = 'https://ai-biolab.ru/data/novosibirsk-region-data.csv'
     data_csv="Novosibirsk.csv"
 elif reg_num == 2:
     location='Omsk'
-    state_url = 'https://covid19-modeling.ru/data/omsk-region-data.csv'
+    state_url = 'https://ai-biolab.ru/data/omsk-region-data.csv'
     data_csv="Omsk.csv"
 else :
     location='Altai'
-    state_url = 'https://covid19-modeling.ru/data/altay-region-data.csv'
+    state_url = 'https://ai-biolab.ru/data/altay-region-data.csv'
     data_csv="Altai.csv"
 
 
@@ -84,7 +84,7 @@ school_days=['2020-03-18', '2020-09-01', '2020-10-24', '2021-01-11']
 school_changes=[0, 1, 0, 0.5]
 
 
-#state_url = './../www/covid19-modeling.ru/data/novosibirsk-region-data-small.csv' #вернуть подключение с сайта
+#state_url = './../www/ai-biolab.ru/data/novosibirsk-region-data-small.csv' #вернуть подключение с сайта
 data = pd.read_csv(state_url, index_col="date", parse_dates=True, na_values=['nan'])
 #data['new_diagnoses'][-3] = 178
 
