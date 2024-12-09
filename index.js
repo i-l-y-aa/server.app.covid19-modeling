@@ -44,7 +44,7 @@ function intervalDelFunc() {
   var data_to_delete = moment().subtract(2, 'days').format('M.D.YYYY')
   console.log(data_to_delete)
   var filter = fileMatch('*_' + data_to_delete + '.json')
-  const testFolder = '/root/server/server.app.covid19-modeling'
+  const testFolder = '/root/server/server.app.ai-biolab'
 
   fs.readdir(testFolder, (err, files) => {
     if (err) {
@@ -190,7 +190,7 @@ app.post('/api/curData', urlencodedParser, (req, res) => {
 
 app.post('/api/CovidStaticFiles', urlencodedParser, (req, res) => {
   res.download(
-    '/root/data/data.app.covid19-modeling/ai-biolab.ru/data/' +
+    '/root/data/data.app.ai-biolab/ai-biolab.ru/data/' +
       req.body.region_name +
       '-region-data.csv'
   )
@@ -202,13 +202,13 @@ app.get('/article', (req, res) => {
 
 app.get('/api/CovidStaticFilesAntibodies', (req, res) => {
   res.download(
-    '/root/data/data.app.covid19-modeling/ai-biolab.ru/data/novosibirsk-invitro.csv'
+    '/root/data/data.app.ai-biolab/ai-biolab.ru/data/novosibirsk-invitro.csv'
   )
 })
 
 app.get('/api/csvCovid', (req, res) => {
   var data = fs.readFile(
-    '/root/data/data.app.covid19-modeling/ai-biolab.ru/data/novosibirsk-region-data.csv',
+    '/root/data/data.app.ai-biolab/ai-biolab.ru/data/novosibirsk-region-data.csv',
     'utf8'
   )
   res.send(data)
@@ -4491,4 +4491,4 @@ app.post('/api/forecasts_train', urlencodedParser, (req, res) => {
   )
 })
 
-app.listen(process.env.PORT || 4000)
+app.listen(process.env.PORT || 8080)
