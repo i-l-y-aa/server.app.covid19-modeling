@@ -44,7 +44,7 @@ function intervalDelFunc() {
   var data_to_delete = moment().subtract(2, 'days').format('M.D.YYYY')
   console.log(data_to_delete)
   var filter = fileMatch('*_' + data_to_delete + '.json')
-  const testFolder = '/root/server/server.app.ai-biolab'
+  const testFolder = '/root/server_v2/server.app.ai-biolab'
 
   fs.readdir(testFolder, (err, files) => {
     if (err) {
